@@ -107,7 +107,10 @@
 
   \noindent\textbf{AWS Promotional Credits needed:} \@awsCredits
 
-  \noindent\textbf{Amazon contact (optional):} \@amazonContactName, \@amazonContactEmail
+  \ifx\@amazonContactName\@empty\else
+    \par\vspace{0.4em}
+    \noindent\textbf{Amazon contact (optional):} \@amazonContactName, \@amazonContactEmail
+  \fi
 
   \noindent\textbf{Keywords:} \@keywords\par
   \vspace{1em}
