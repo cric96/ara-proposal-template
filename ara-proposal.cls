@@ -98,8 +98,10 @@
   \end{center}
   \vspace{0.4em}
   \noindent\textbf{PI:} \@piName, \@piTitle, \@piDepartment, \@piUniversity
-
-  \noindent\textbf{Co-PI:} \@copiName, \@copiTitle, \@copiDepartment, \@copiUniversity
+  \ifx\@copiName\@empty\else
+    \par\vspace{0.4em}
+    \noindent\textbf{Co-PI:} \@copiName, \@copiTitle, \@copiDepartment, \@copiUniversity
+  \fi
 
   \noindent\textbf{Cash funding needed:} \@cashFunding
 
